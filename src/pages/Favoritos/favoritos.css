@@ -1,0 +1,83 @@
+/* Container principal */
+.meus-filmes {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza os itens horizontalmente */
+}
+
+/* Título da seção */
+.meus-filmes h1 {
+  margin-bottom: 14px;
+}
+
+/* Span dos filmes */
+.meus-filmes span {
+  font-size: 18px;
+}
+
+/* Lista de filmes */
+.meus-filmes ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* espaço entre itens */
+}
+
+/* Cada item da lista ocupa 80% da tela */
+.meus-filmes ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60vw; /* 80% da largura da tela */
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+/* Título do filme ocupa todo o espaço restante à esquerda */
+.meus-filmes ul li span {
+  flex: 1;
+  font-size: 18px;
+}
+
+/* Bloco dos botões à direita */
+.meus-filmes ul li div {
+  display: flex;
+  gap: 12px; /* espaço entre os botões */
+}
+
+/* Botão "ver detalhes" */
+.meus-filmes ul li div a {
+  text-decoration: none;
+  background: #116feb;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.meus-filmes ul li div a:hover {
+  background: #0d5ec4;
+}
+
+/* Botão "excluir" */
+.meus-filmes ul li div button {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.meus-filmes ul li div button:hover {
+  background: #c92e3a;
+}
